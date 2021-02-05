@@ -1,0 +1,43 @@
+body, body * {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+}    
+.header h1{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    margin: 14px;   
+} 
+.header p {
+    cursor: pointer;
+    font-size: 15px;
+    color: grey;
+    font-family: 'Dosis', sans-serif;
+    margin-left:25px;
+    margin-top: 14px;
+}
+.header {
+    position: relative;
+    display: flex;
+    background-color: #222222f8;
+    padding: 4px;
+}
+.content {
+    display: flex;
+}
+
+.dev-center{
+    color: white;
+    margin-left: 50vw;
+}
+
+.home {
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center; 
+    margin-left: 50px;
+    top: 0;
+}
+
