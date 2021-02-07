@@ -1,43 +1,239 @@
+:root {
+    --dark-grey: #222222f8
+}
+
 body, body * {
     font-family: 'Dosis', sans-serif;
     margin: 0;
-}    
-.header h1{
-    cursor: pointer;
-    font-size: 15px;
-    color: white;
-    margin: 14px;   
 } 
-.header p {
-    cursor: pointer;
-    font-size: 15px;
-    color: grey;
-    font-family: 'Dosis', sans-serif;
-    margin-left:25px;
-    margin-top: 14px;
-}
+ 
 .header {
-    position: relative;
-    display: flex;
-    background-color: #222222f8;
-    padding: 4px;
-}
-.content {
-    display: flex;
+    overflow: hidden;
+    background-color: #222222;
+    
 }
 
-.dev-center{
+.header a {
+    float: left;
+    color: grey;
+    text-align: center;
+    padding:15px ;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a:hover {
     color: white;
-    margin-left: 50vw;
 }
 
-.home {
-    position: relative;
+.header a.active {
     background-color: black;
     color: white;
-    display: flex;
-    align-items: center; 
     margin-left: 50px;
-    top: 0;
+}
+
+.header-right  {
+  
+    float: right;
+
+}
+
+.header-right:hover {
+    color: white;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    background-color: red;
+    height: 60px;
+    border-radius: 50%;
+    padding: 20px;
+    border: 2px solid white;
+}
+.image {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.landing-page {
+    height: 84vh;
+    background-color: #63389E;
+    text-align: center;
+}
+.landing-page h1 {
+font-size: 6vw;
+color: white;
+}
+
+.landing-page p {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    color: rgb(212, 212, 212);
+}
+.landing-page button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.app-button {
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    border : 0px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+.app-button:hover {
+    opacity: 0.8;
+}
+.button {
+    padding-left: 3px;
+    padding-top: 20px;
+
+}
+ #purple {
+    border: 0;
+    color: white;
+    width: 170px;
+    background-color: #b388eb;
+}
+#purple:hover {
+    background-color: #775b9eee;
+}
+
+.row {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+ .more-info  {
+     position: relative;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: rgba(210, 232, 255, 0.788);
+    opacity: 0.9;
+    width: 85%;
+    text-align: center;
+    font-size: 16px;   
+    border-radius: 5px;
+    border: 1px solid rgba(210, 232, 255, 0.788);
+
+    
+}
+
+.more-info p {
+    color: #286e8d;
+    font-weight: 500;
+    padding: 16px;
+}
+
+
+.content {
+    display: flex;
+    margin-left: 60px;
+    width: 85%;
+    
+}
+
+ .content hr {
+    border: 0.1px solid grey;
+    opacity: 0.2;
+    margin-bottom: 30px;
+}
+
+.content .heading {
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.right li a,
+.left li a {
+    text-decoration: none;
+    color:#3275b4;
+}
+
+.right li span {
+    font-size: 14px;
+    background-color: rgba(252, 233, 233, 0.7);
+    color: red;
+}
+
+.left {
+    width: 45%;
+    float: left;
+}
+
+.right {
+    width: 45%;
+    /* float: right; */
+}
+
+.bottom {
+    opacity: 0.1;
+    
+} 
+@media screen and (max-width: 1300px){
+    .landing-page {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .landing-page p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .header a {
+        padding: 10px;
+        font-size: 15px;
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .image {
+        padding-top: 30px;
+    }
+    .content {
+        display: block;
+     
+    }
+    .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .right {
+        width: 100%;
+    }
+    .header-right {
+        float: none;
+    }
+    .header a.active {
+        margin-left: 0;
+    }
+    .landing-page p {
+        font-size: 16px;
+    }
+    .content .heading{
+       margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .landing-page p {
+        font-size: 13px;
+    }
+    .row {
+        display: block;
+    }
 }
 

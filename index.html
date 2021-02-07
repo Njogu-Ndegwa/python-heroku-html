@@ -10,28 +10,87 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header" >
-        <div class="content" >
-            <div  class="home" >
-                <h1> <i class="fas fa-home">  </i> Home </h1>
-            </div>
-            <p> <i class="fas fa-user-alt"></i> How Heroku Works  </p>
-            <p> <i class="fas fa-info-circle"></i> Getting Started Guides  </p>
-        </div>
-            <div class="dev-center" >
-            <p class="dev"><i class="fas fa-book"></i> Heroku Dev Center</p>
+    <header class="header">
+        <a class="active" href="#home" > <i class="fas fa-home"></i> Home</a>
+        <a href="#"> <i class="fas fa-user-alt"></i> How Heroku Works</a>
+        <a href="#"> <i class="fas fa-info-circle"></i>  Getting started guides <i class="fas fa-caret-down"></i> </a>
+        <div class="header-right">
+            <a href="#"> <i class="fas fa-book"></i>  Heroku Dev Center </a>
         </div>
     </header>
-    <div>
+    <div class="landing-page" >
+        <div class="image">
+            <img src="./images/python.png" alt="image" >
+        </div>
         <h1>Getting Started with Python on Heroku</h1>
-        <p>This is a sample Python application deployed to Heroku. 
-            It's a reasonably simple app - but a good foundation for
-            understanding how to get the most out of the Heroku platform.</p>
-            <div>
-            <button>Getting Started With Python</button>
-            <button>Source On Github</button>
-            </div>
-            
+        <div class="container" >
+            <p>This is a sample Python application deployed to Heroku. 
+                It's a reasonably simple app - but a <br/> good foundation for
+                understanding how to get the most out of the Heroku platform.</p>
+        </div>
+                <div class='row' >
+                    <div class="button" >
+                        <button class="app-button" > <i class="fas fa-bolt"></i> Getting Started With Python </button>
+                    </div>
+                    <div class="button" >                     
+                    <button class="app-button"  id='purple' > <i class="far fa-arrow-alt-circle-down"></i> Source on Github </button>
+                    </div>
+                </div> 
     </div>
+   
+        <div class="more-info" >
+            <p >To deploy your own copy, and learn the fundamentals of the Heroku platform, 
+                head over to the <strong>Getting Started with Python on Heroku </strong> tutorial.</p>
+        </div>
+       
+        <div class="content">
+            <hr />
+            
+                <div class="left">
+                    <h1 class="heading"><i class="fas fa-info-circle"></i> How this sample App works </h1>
+                    <ul>
+                        <li>This app was deployed to Heroku, 
+                            either using Git or by using <a href='#'>Heroku Button </a>on the repository.</li>
+                        <li> When Heroku received the source code, it fetched 
+                            all the dependencies in the <a href="#"> Pipfile </a>, creating a deployable slug. </li>
+                        <li>The platform then spins up a dyno, a lightweight container that provides 
+                            an isolated environment in which the slug can be mounted and executed.</li>
+                        <li> You can scale your app, manage it, and deploy over <a href="#"> 150 add-on services </a>,
+                             from the Dashboard or CLI. </li>
+                    </ul>
+                </div>   
+                <div class="right">
+                    <h1 class="heading"><i class="fa fa-link" aria-hidden="true"></i> How this sample App works </h1>
+                <ul>
+                    <li>If you are following the <a href="#"> Getting Started </a> guide, then please head 
+                        back to the tutorial and follow the next steps!</li>
+                    <li> If you deployed this app by deploying the Heroku Button,
+                         then in a command line shell, run:</li>
+                    
+                        <ul>
+                            <li> <span> git clone https://github.com/heroku/python-getting-started.git</span style="color:red" > - 
+                                this will create a local copy of the source code for the app</li>
+                            <li> <span>cd python-getting-started </span> - change directory into the local
+                                 source code repository</li>
+                            <li> <span>heroku git:remote -a <your-app-name> </span> - associate the Heroku app 
+                                with the repository</li>
+                            <li>You'll now be set up to run the app locally, or <a href="#"> deploy changes </a> to Heroku</li>
+                        </ul>
+                     </ul>
+                    <h1 class="heading"><i class="fa fa-link" aria-hidden="true"></i> Helpful Links</h1>
+                        <ul>
+                            <li><a href="#">Heroku</a></li>
+                            <li><a href="#"> Heroku Dev Center </a></li>
+                            <li><a href="#"> Getting Started with Python on Heroku </a></li>
+                            <li><a href="#"> Configuring Django apps for Heroku </a></li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="more-info" id="bottom" >
+                <p> Please do work through the Getting Started guide, even if you do know how to build such an application. The guide covers the basics of working with Heroku,
+                    and will familiarize you with all the concepts you need in order to build and deploy your own apps. </p>
+            </div>
+        
 </body>
 </html>
